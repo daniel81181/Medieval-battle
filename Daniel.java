@@ -150,7 +150,7 @@ for(int i=0;i<elfsAll.length;i++){
 for(int i=0;i<elfsAll.length-1;i++){
   for(int j=i+1;j<elfsAll.length;j++){
  float d= distancebwCreatures(elfsAll[i],elfsAll[j]);
-if(d<5)
+if(d<5 && d>0)
 {
 int horda=elfsAll[i].getHord();
 int h=elfsAll[j].getHord();
@@ -167,7 +167,7 @@ System.out.println("Se forma con la horda"+(horda+1)+"del elfo"+(i+1)+"con el el
 for(int i=0;i<orchsAll.length-1;i++){
   for(int j=i+1;j<orchsAll.length;j++){
 float d= distancebwCreatures(orchsAll[i],orchsAll[j]);
-if(d<=5){
+if(d<5 && d>5){
     int horda=orchsAll[i].getHord();
     int h=orchsAll[j].getHord();
      gettingHordes(hordesOrchs[horda],hordesOrchs[h],orchsAll[i],orchsAll[j]);
