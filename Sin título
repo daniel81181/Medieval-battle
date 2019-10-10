@@ -1,0 +1,18 @@
+public printPos()
+public boolean findAmuletOrchs(Orch a, Amulet b){
+  if(a.getPX()==b.getPX() && a.getPY()==b.getPY()){return true;}
+      return false;}
+
+public boolean findAmuletElfs(Elf a, Amulet b){
+    if(a.getPX()==b.getPX() && a.getPY()==b.getPY()){return true;}
+      return false;}
+
+public boolean findWeaponElfs(Elf a, Weapon b){
+  if(a.getPX()==b.getPX() && a.getPY()==b.getPY()){
+    return true;
+  } return false;
+}
+public boolean findWeaponOrchs(Orch a, Weapon b){
+  if(a.getPX()==b.getPX() && a.getPY()==b.getPY()){
+    return true;}return false;
+  }
